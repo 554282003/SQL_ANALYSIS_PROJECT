@@ -16,7 +16,6 @@ With top_paying_jobs AS (
     LEFT JOIN company_dim as company
     ON job_postings.company_id = company.company_id
     WHERE job_title_short = 'Data Analyst' AND 
-    job_location = 'India' AND 
     salary_year_avg IS NOT NULL
     ORDER BY 
     salary_year_avg DESC
